@@ -108,7 +108,7 @@ SOL Sender is a sophisticated Web3 application that demonstrates enterprise-leve
 ```bash
 # Clone the repository
 git clone <your-repository-url>
-cd solanadevnet
+cd solsender
 
 # Install dependencies
 npm install
@@ -120,7 +120,7 @@ npm list
 ### **2. Environment Configuration**
 ```bash
 # Create environment file (optional)
-cp .env.example .env.local
+copy .env.example .env.local
 
 # Configure custom RPC endpoint (optional)
 # NEXT_PUBLIC_SOLANA_RPC_URL=https://api.devnet.solana.com
