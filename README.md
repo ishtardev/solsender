@@ -2,8 +2,10 @@
 
 A Next.js application that enables secure SOL token transfers on Solana devnet with Phantom wallet integration, transaction tracking, and a modern UI.
 
-![SOL Sender Application Screenshot](./public/images/image.png)
-*SOL Sender UI with wallet connection and transaction features*
+<div align="center">
+  <img src="./public/images/image.png" alt="SOL Sender Application Screenshot" width="400" />
+  <p><em>SOL Sender UI with wallet connection and transaction features</em></p>
+</div>
 
 ## 🎯 **Project Overview**
 
