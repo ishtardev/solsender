@@ -2,6 +2,9 @@
 
 A Next.js application that enables secure SOL token transfers on Solana devnet with Phantom wallet integration, transaction tracking, and a modern UI.
 
+![SOL Sender Application Screenshot](./public/images/image.png)
+*SOL Sender UI with wallet connection and transaction features*
+
 ## 🎯 **Project Overview**
 
 - **Frontend**: Next.js 15 with TypeScript and App Router
@@ -50,19 +53,27 @@ npm run dev
    - View confirmation and transaction signature
 
 ## 🏗️ **Project Structure**
-
 ```
 solsender/
 ├── src/
-│   ├── app/                      # Next.js App Router
+│   ├── app/                     # Next.js App Router
+│   │   ├── layout.tsx          # Root layout with wallet provider
+│   │   ├── page.tsx            # Main application page
+│   │   ├── globals.css         # Global styles and Tailwind
+│   │   └── wallet-adapter.css  # Custom wallet styling
 │   ├── components/
-│   │   └── SolanaTransaction.tsx # Main transaction component
-│   ├── contexts/
-│   │   └── WalletContextProvider.tsx # Wallet configuration
-│   └── firebase/                 # Firebase integration
-└── public/                       # Static assets
+│   │   └── SolanaTransaction.tsx # Main transaction interface
+│   └── contexts/
+│       ├── WalletContextProvider.tsx # Wallet adapter configuration
+│       └── ClientWalletProvider.tsx  # Client-side wrapper
+├── public/                      # Static assets
+├── .github/
+│   └── copilot-instructions.md # Development guidelines
+├── next.config.ts              # Next.js configuration
+├── tailwind.config.ts          # Tailwind CSS configuration
+├── tsconfig.json              # TypeScript configuration
+└── package.json               # Dependencies and scripts
 ```
-
 ## ⚙️ **Customization**
 
 ### **Transaction Settings**
